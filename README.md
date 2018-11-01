@@ -28,10 +28,9 @@ and the basic debugging can be done ad hoc by anyone if they needs it.
 
 -To use beautiful soup. Didn't work due to the redirection and the cookie. Probably is a way to make it work, I just felt this would be easier.
 
--To use Xpaths and inbuilt selenium functions for clicking links/buttons rather than the short Javascript scripts. However, selenium waits for the site to load and this can take "forever" in this instance
+-To use Xpaths and inbuilt selenium functions for clicking links/buttons rather than the short Javascript scripts. However, selenium waits for the site to load and this can take "forever" in this instance. the machine i was running this on was particularly slow aswell, probably contributed to this problem.
 
--the machine i was running this on was particularly slow aswell, probably contributed to this problem.
-To send the link directly, but you need a cookie.
+-To send the link directly, but you need a cookie.
 
 -Set the settings ,which are declared in the code for firefox download habits, permanently through firefox GUI didn't seem to work for the driver.
 
