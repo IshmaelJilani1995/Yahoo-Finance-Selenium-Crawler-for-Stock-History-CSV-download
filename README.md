@@ -4,7 +4,7 @@ Yahoo! Finance famously disabled their API. You can still, however, download the
 by scraping their site for financial analysis purposes.
 This crude, but functional and to be improved, selenium scraper performs this task and I have scraped hundreds of CSVs using it.
 
-#The code is commented and self explanatory apart from the following:
+# The code is commented and self explanatory apart from the following:
 
 1. For the JSON file, the tickers were imported as text via copy and paste from an excel file available at 
 http://investexcel.net/all-yahoo-finance-stock-tickers/ and the following REGEX was applied in Visual studio code to generate a list:
@@ -24,7 +24,7 @@ I have simply remembered it from other opensource users.
 and the basic debugging can be done ad hoc by anyone if they needs it.
 
 
-#Tried for reference:
+# Tried for reference:
 
 -To use beautiful soup. Didn't work due to the redirection and the cookie. Probably is a way to make it work, I just felt this would be easier.
 
@@ -35,7 +35,7 @@ To send the link directly, but you need a cookie.
 
 -Set the settings ,which are declared in the code for firefox download habits, permanently through firefox GUI didn't seem to work for the driver.
 
-#Planned Improvements (required to support larger volume than what I used it for which was around 200 CSV's):
+# Planned Improvements (required to support larger volume than what I used it for which was around 200 CSV's):
 
 0.Add a exception catcher so the system may continue even when it hits an error.
 
@@ -55,5 +55,5 @@ The above I know is possible, below i'm not sure how to approach but shall think
 7?. Dynamically request a cookie so download is possible without browser?
 7?. A "shadow" browser?
 
-#Credit to:
+# Credit to:
 http://investexcel.net/all-yahoo-finance-stock-tickers/ for the ticker list
