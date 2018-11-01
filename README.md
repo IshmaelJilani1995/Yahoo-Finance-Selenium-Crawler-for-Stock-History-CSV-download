@@ -4,7 +4,7 @@ Yahoo! Finance famously disabled their API. You can still, however, download the
 by scraping their site for financial analysis purposes.
 This crude, but functional and to be improved, selenium scraper performs this task and I have scraped hundreds of CSVs using it.
 
-The code is commented and self explanatory apart from the following:
+#The code is commented and self explanatory apart from the following:
 
 1. For the JSON file, the tickers were imported as text via copy and paste from an excel file available at 
 http://investexcel.net/all-yahoo-finance-stock-tickers/ and the following REGEX was applied in Visual studio code to generate a list:
@@ -24,24 +24,36 @@ I have simply remembered it from other opensource users.
 and the basic debugging can be done ad hoc by anyone if they needs it.
 
 
-Tried for reference:
+#Tried for reference:
+
 -To use beautiful soup. Didn't work due to the redirection and the cookie. Probably is a way to make it work, I just felt this would be easier.
--To use Xpaths and inbuilt selenium functions for clicking links/buttons rather than the short Javascript scripts. However, selenium waits for the site to load and this can take "forever" in this instance-
+
+-To use Xpaths and inbuilt selenium functions for clicking links/buttons rather than the short Javascript scripts. However, selenium waits for the site to load and this can take "forever" in this instance
+
 -the machine i was running this on was particularly slow aswell, probably contributed to this problem.
 To send the link directly, but you need a cookie.
+
 -Set the settings ,which are declared in the code for firefox download habits, permanently through firefox GUI didn't seem to work for the driver.
 
-Planned Improvements (required to support larger volume than what I used it for which was around 200 CSV's):
+#Planned Improvements (required to support larger volume than what I used it for which was around 200 CSV's):
+
 0.Add a exception catcher so the system may continue even when it hits an error.
+
 1.Remove the timers and replace it with a check for the element to load instead
+
 2.Have the tickers removed from the list if downloaded so that the process can be interrupted without having to start from the beginning
+
 3.Access history to set period to max
+
 4.Create concurrency for multi-core computers and potential multiple threads/ mutex etc.
+
 5.Create networking for multiple computers
+
 6. Remove images/CSS for quicker loading times
-the above I know is possible, below i'm not sure how to approach but shall think about
+The above I know is possible, below i'm not sure how to approach but shall think about
+
 7?. Dynamically request a cookie so download is possible without browser?
 7?. A "shadow" browser?
 
-Credit to:
+#Credit to:
 http://investexcel.net/all-yahoo-finance-stock-tickers/ for the ticker list
