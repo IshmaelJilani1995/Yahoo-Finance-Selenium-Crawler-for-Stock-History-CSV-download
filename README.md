@@ -3,7 +3,8 @@ Yahoo! Finance Selenium Crawler for Stock History CSV download
 Yahoo! Finance famously disabled their API. You can still, however, download their historical data and other information 
 by scraping their site for financial analysis purposes.
 This crude, but functional and to be improved, selenium scraper performs this task and I have scraped hundreds of CSVs using it.
-
+# Dependencies
+Only those in the python file, not complicated :)
 # The code is commented and self explanatory apart from the following:
 
 1. For the JSON file, the tickers were imported as text via copy and paste from an excel file available at 
